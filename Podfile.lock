@@ -1,0 +1,16 @@
+PODS:
+  - CCNStatusItem (0.6.0)
+
+DEPENDENCIES:
+  - CCNStatusItem
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CCNStatusItem
+
+SPEC CHECKSUMS:
+  CCNStatusItem: 5b0e49dcfc21f65b530985ec838c737b1d2195ca
+
+PODFILE CHECKSUM: 68210ffdd769bfb2549c6539ca0dbf3cae84e204
+
+COCOAPODS: 1.5.3
