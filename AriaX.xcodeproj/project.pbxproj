@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1B670CE8211B21EB006A15F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B670CE7211B21EB006A15F5 /* AppDelegate.swift */; };
-		1B670CEA211B21EB006A15F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B670CE9211B21EB006A15F5 /* ViewController.swift */; };
 		1B670CEC211B21EC006A15F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B670CEB211B21EC006A15F5 /* Assets.xcassets */; };
 		1B670CEF211B21EC006A15F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B670CED211B21EC006A15F5 /* Main.storyboard */; };
 		1B670CFB211B21ED006A15F5 /* AriaXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B670CFA211B21ED006A15F5 /* AriaXTests.swift */; };
 		578353ED537E31FC40C0988D /* libPods-AriaX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D99511AAC340B76161A6F968 /* libPods-AriaX.a */; };
+		E072C6EE211B2733005864F7 /* DownloadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072C6ED211B2733005864F7 /* DownloadListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		1B670CE4211B21EB006A15F5 /* AriaX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AriaX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B670CE7211B21EB006A15F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B670CE9211B21EB006A15F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B670CEB211B21EC006A15F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B670CEE211B21EC006A15F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B670CF0211B21EC006A15F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 		9B194B1BB4494A4D76A98E59 /* Pods-AriaX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AriaX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AriaX/Pods-AriaX.debug.xcconfig"; sourceTree = "<group>"; };
 		A0CE6774B567C25EE5A4FFA3 /* Pods-AriaX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AriaX.release.xcconfig"; path = "Pods/Target Support Files/Pods-AriaX/Pods-AriaX.release.xcconfig"; sourceTree = "<group>"; };
 		D99511AAC340B76161A6F968 /* libPods-AriaX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AriaX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E072C6ED211B2733005864F7 /* DownloadListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +91,8 @@
 		1B670CE6211B21EB006A15F5 /* AriaX */ = {
 			isa = PBXGroup;
 			children = (
-				1B670D07211B251B006A15F5 /* Presentation */,
+				E072C6EB211B26ED005864F7 /* Presentation */,
 				1B670CE7211B21EB006A15F5 /* AppDelegate.swift */,
-				1B670CE9211B21EB006A15F5 /* ViewController.swift */,
-				1B670CED211B21EC006A15F5 /* Main.storyboard */,
 				1B670D08211B2524006A15F5 /* Resource */,
 			);
 			path = AriaX;
@@ -109,14 +107,6 @@
 			path = AriaXTests;
 			sourceTree = "<group>";
 		};
-		1B670D07211B251B006A15F5 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				1B670D09211B2547006A15F5 /* Main */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
 		1B670D08211B2524006A15F5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,37 +117,6 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		1B670D09211B2547006A15F5 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				1B670D0C211B255A006A15F5 /* ViewController */,
-				1B670D0B211B2555006A15F5 /* View */,
-				1B670D0A211B254F006A15F5 /* Model */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		1B670D0A211B254F006A15F5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1B670D0B211B2555006A15F5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1B670D0C211B255A006A15F5 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		60186A28AEA8369AA73CC8DF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +124,39 @@
 				A0CE6774B567C25EE5A4FFA3 /* Pods-AriaX.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E072C6EB211B26ED005864F7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E072C6F0211B29E9005864F7 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E072C6EC211B26F9005864F7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E072C6ED211B2733005864F7 /* DownloadListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E072C6EF211B292D005864F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B670CED211B21EC006A15F5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E072C6F0211B29E9005864F7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E072C6EC211B26F9005864F7 /* ViewController */,
+				E072C6EF211B292D005864F7 /* View */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,8 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B670CEA211B21EB006A15F5 /* ViewController.swift in Sources */,
 				1B670CE8211B21EB006A15F5 /* AppDelegate.swift in Sources */,
+				E072C6EE211B2733005864F7 /* DownloadListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
