@@ -1,0 +1,76 @@
+included: # paths to include during linting. `--path` is ignored if present.
+  - Aria2X
+  - Aria2XTests
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Aria2X/Aria2
+
+disabled_rules: # rule identifiers to exclude from running
+  - force_cast
+  - identifier_name
+  - control_statement
+  - shorthand_operator
+  - object_literal
+opt_in_rules: # some rules are only opt-in
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - conditional_returns_on_newline
+  - fatal_error_message
+  - first_where
+  # - empty_count
+  - explicit_init
+  - extension_access_modifier
+  # - file_header
+  # - force_unwrapping
+  - nimble_operator
+  - number_separator
+  - object_literal
+  - operator_usage_whitespace
+  - overridden_super_call
+  - private_outlet
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - sorted_imports
+  - vertical_parameter_alignment_on_call
+  # Find all the available rules by running:
+  # swiftlint rules
+
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+# force_cast: warning # implicitly
+# force_try:
+#   severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+
+attributes:
+  always_on_same_line:
+    - '@objc'
+    - '@IBAction'
+    - '@NSManaged'
+  always_on_line_above:
+    - '@UIApplicationMain'
+    - '@available'
+    - '@discardableResult'
+large_tuple:
+  warning: 3
+  error: 4
+file_length:
+  warning: 600
+  error: 1200
+function_body_length:
+  warning: 80
+  error: 150
+type_body_length:
+  warning: 400
+  error: 800
+line_length: 200
+number_separator:
+  minimum_length: 5
+cyclomatic_complexity: 20
+
+force_try:
+  severity: warning # 显式
+
+reporter: "xcode" # 报告类型 (xcode, json, csv, checkstyle, junit, html, emoji)

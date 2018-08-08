@@ -169,6 +169,7 @@
 				E0FC7221211AC66500B024A3 /* Sources */,
 				E0FC7222211AC66500B024A3 /* Frameworks */,
 				E0FC7223211AC66500B024A3 /* Resources */,
+				E072C6E4211AE29B005864F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,6 +261,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		E072C6E4211AE29B005864F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\n${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"Release Packing\"\nfi";
+		};
 		F94CBDCAA8D201E64A268BA2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
