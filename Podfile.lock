@@ -1,20 +1,16 @@
 PODS:
-  - CCNStatusItem (0.6.0)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
-  - CCNStatusItem
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - CCNStatusItem
     - SwiftLint
 
 SPEC CHECKSUMS:
-  CCNStatusItem: 5b0e49dcfc21f65b530985ec838c737b1d2195ca
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: ab797f10ddf00721521530769d8489c72f5dbae0
+PODFILE CHECKSUM: e346645b413bfcd7b5cb72c5457098a6c1691266
 
 COCOAPODS: 1.5.3
