@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E072C6DB211AD96A005864F7 /* startAria2.sh in Resources */ = {isa = PBXBuildFile; fileRef = E072C6D9211AD96A005864F7 /* startAria2.sh */; };
+		E072C6DC211AD96A005864F7 /* restartAria2.sh in Resources */ = {isa = PBXBuildFile; fileRef = E072C6DA211AD96A005864F7 /* restartAria2.sh */; };
+		E072C6E1211AD9D0005864F7 /* aria2.conf in Resources */ = {isa = PBXBuildFile; fileRef = E072C6DE211AD9CF005864F7 /* aria2.conf */; };
+		E072C6E2211AD9D0005864F7 /* aria2c in Resources */ = {isa = PBXBuildFile; fileRef = E072C6DF211AD9CF005864F7 /* aria2c */; };
+		E072C6E3211AD9D0005864F7 /* aria2.session in Resources */ = {isa = PBXBuildFile; fileRef = E072C6E0211AD9D0005864F7 /* aria2.session */; };
 		E0FC7229211AC66500B024A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FC7228211AC66500B024A3 /* AppDelegate.swift */; };
 		E0FC722B211AC66500B024A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FC722A211AC66500B024A3 /* ViewController.swift */; };
 		E0FC722D211AC66600B024A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0FC722C211AC66600B024A3 /* Assets.xcassets */; };
@@ -28,6 +33,11 @@
 /* Begin PBXFileReference section */
 		3CC1ABB50B83C586EF681F0D /* libPods-Aria2X.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aria2X.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE75E4CC814AE471F17CC281 /* Pods-Aria2X.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aria2X.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aria2X/Pods-Aria2X.release.xcconfig"; sourceTree = "<group>"; };
+		E072C6D9211AD96A005864F7 /* startAria2.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = startAria2.sh; sourceTree = "<group>"; };
+		E072C6DA211AD96A005864F7 /* restartAria2.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = restartAria2.sh; sourceTree = "<group>"; };
+		E072C6DE211AD9CF005864F7 /* aria2.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aria2.conf; sourceTree = "<group>"; };
+		E072C6DF211AD9CF005864F7 /* aria2c */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = aria2c; sourceTree = "<group>"; };
+		E072C6E0211AD9D0005864F7 /* aria2.session */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aria2.session; sourceTree = "<group>"; };
 		E0FC7225211AC66500B024A3 /* Aria2X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aria2X.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FC7228211AC66500B024A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0FC722A211AC66500B024A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +87,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E072C6D7211AD8D6005864F7 /* Aria2 */ = {
+			isa = PBXGroup;
+			children = (
+				E072C6DD211AD9A7005864F7 /* Configure */,
+				E072C6D8211AD941005864F7 /* Scripts */,
+			);
+			path = Aria2;
+			sourceTree = "<group>";
+		};
+		E072C6D8211AD941005864F7 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E072C6DA211AD96A005864F7 /* restartAria2.sh */,
+				E072C6D9211AD96A005864F7 /* startAria2.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		E072C6DD211AD9A7005864F7 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				E072C6DE211AD9CF005864F7 /* aria2.conf */,
+				E072C6E0211AD9D0005864F7 /* aria2.session */,
+				E072C6DF211AD9CF005864F7 /* aria2c */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
 		E0FC721C211AC66500B024A3 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +138,7 @@
 		E0FC7227211AC66500B024A3 /* Aria2X */ = {
 			isa = PBXGroup;
 			children = (
+				E072C6D7211AD8D6005864F7 /* Aria2 */,
 				E0FC7228211AC66500B024A3 /* AppDelegate.swift */,
 				E0FC722A211AC66500B024A3 /* ViewController.swift */,
 				E0FC722C211AC66600B024A3 /* Assets.xcassets */,
@@ -201,8 +240,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E072C6DC211AD96A005864F7 /* restartAria2.sh in Resources */,
+				E072C6E3211AD9D0005864F7 /* aria2.session in Resources */,
+				E072C6E1211AD9D0005864F7 /* aria2.conf in Resources */,
+				E072C6E2211AD9D0005864F7 /* aria2c in Resources */,
 				E0FC722D211AC66600B024A3 /* Assets.xcassets in Resources */,
 				E0FC7230211AC66600B024A3 /* Main.storyboard in Resources */,
+				E072C6DB211AD96A005864F7 /* startAria2.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
